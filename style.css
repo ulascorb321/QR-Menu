@@ -1,0 +1,184 @@
+body {
+    background-color: rgb(0, 0, 0);
+}
+
+#logo {
+    width: 200px;
+    height: 200px;
+}
+
+.logo {
+    margin-top: 5%;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+}
+
+.container .menu img {
+    width: 300px;
+    height: 300px;
+    margin-left: 1%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    border-radius: 3%;
+}
+
+.yazilar {
+    color: khaki;
+    display: flex;
+    justify-content: center;
+}
+
+.sicak {
+    margin-left: 80%;
+}
+
+.soguk {
+    margin-left: 80%;
+}
+
+a {
+    text-decoration: none;
+    color: khaki;
+    display: flex;
+    justify-content: center;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: rgb(14, 13, 13);
+    transition: left 0.5s ease-in-out;
+    box-shadow: 0 0 10px khaki;
+}
+
+.sidebar.active {
+    left: 0;
+}
+
+.menu-toggle {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 999;
+    transition: left 0.5s ease-in-out;
+    background-color: transparent;
+    color: khaki;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    transition: all 0.5s;
+    border: 2px solid khaki;
+}
+
+.menu-toggle:hover {
+    background-color: khaki;
+    color: black;
+}
+
+.menu-toggle-click {
+    position: fixed;
+    top: 10px;
+    left: 270px;
+    z-index: 999;
+}
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.wrapper .sidebar a {
+    font-size: 25px;
+    margin-top: 5%;
+}
+
+#logo2 {
+    width: 200px;
+    height: 200px;
+    margin-top: 3%;
+}
+
+.resimler {
+    max-width: 370px;
+    height: 370px;
+    display: block;
+    margin: auto;
+    margin-top: 5%;
+    border-radius: 3%;
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.image-container div {
+    flex: 0 40%;
+    padding: 10px;
+}
+
+.caption a {
+    margin-left: 5%;
+    color: khaki;
+    font-size: 30px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container img {
+    /* width: 45%; */
+    margin-bottom: 10px;    
+    /* margin-left: 10%; */
+    border-radius: 3%;
+}
+
+.container h3 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .container h3 {
+        font-size: 1.5rem;
+    }
+}
+
+.yemeklerf{
+    max-width: 500px;
+    height: 400px;
+}
+
+.yemekleryazi{
+    
+    color: khaki;
+}
